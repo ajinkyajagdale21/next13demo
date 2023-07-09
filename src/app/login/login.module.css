@@ -1,0 +1,29 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.loginForm{
+    width: 18rem;
+    text-align: center;
+    margin: 5% auto 0;
+}
+.inputField{
+    padding: 0.8rem 1rem ;
+    background-color: #E2E2E2;
+    border: none;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+}
+.submitBtn{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0rem 0rem;
+    width: 100%;
+}
+.linkerText{
+    color: black !important;
+    margin-top: 2rem;
+}
