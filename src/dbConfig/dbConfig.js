@@ -1,8 +1,8 @@
-import mongoose, { connection } from "mongoose";
+import mongoose from "mongoose";
 
 export async function connect(){
     try{
-        mongoose.connect(process.env.MONGO_URL)
+        mongoose.connect(process.env.MONGO_URL , { useNewUrlParser: true, useUnifiedTopology: true })
         const connection = mongoose.connection
         
         connection.on('connected',()=>{
