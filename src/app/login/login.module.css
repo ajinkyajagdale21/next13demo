@@ -22,8 +22,12 @@
     border-radius: 0.5rem;
     margin: 1rem 0rem 0rem;
     width: 100%;
+    cursor: pointer;
 }
 .linkerText{
     color: black !important;
     margin-top: 2rem;
+}
+.disabledSubmitBtn{
+    background-color: #333333 !important ;
 }

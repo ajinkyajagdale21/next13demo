@@ -5,20 +5,13 @@ import bcryptjs from 'bcryptjs'
 
 connect()
 
-export async function GET(request) {
-    return new Response('Hello, Next.js!', {
-      status: 200,
-    })
-  }
 
 export async function POST(request){
     try{
         const reqBody = await request.json()
         const {userName,password,email}= reqBody 
 
-        const user = User.findOne({email})
-
-        console.log(user,"one");
+        const user = await User.findOne({email})
 
         if(user){
             return NextResponse.json({error:"user already exists",status:400 })
@@ -34,9 +27,8 @@ export async function POST(request){
         })
 
         const savedUser = await newUser.save()
-        console.log(savedUser);
 
-        return NextResponse.json({message:"User created successfully !! ", success:true,savedUser})
+        return NextResponse.json({message:"User created successfully !! ", success:true,savedUser,status:200})
 
     }
     catch(error){
