@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.navHeader{
+    color: white !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBtns{
+    background: white;
+    border: none;
+    margin: 0.5rem;
+    padding: 0.25rem 0.7rem;  
+    border-radius: 1rem;
+    font-weight: 500;
+}
+.navItems{
+    background: none;
+    color: white;
+    border: none;
+    margin: 0.5rem;
+    padding: 0.25rem 0.7rem;  
+    font-weight: 500;
+}
